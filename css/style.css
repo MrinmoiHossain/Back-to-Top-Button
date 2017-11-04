@@ -1,0 +1,152 @@
+/*
+    Author: Mrinmoi Hossain Mokit
+    E-mail: mokit.hossain2014@gmail.com
+    Website:
+*/
+
+/*---All Tags---*/
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+img {
+    border: 0;
+}
+ul, ol {
+    list-style-type: none;
+}
+a {
+    text-decoration: none !important;
+}
+.clr {
+    clear: both;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+.clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+body {
+
+}
+/*----------------------------
+            Full Body
+-----------------------------*/
+.full-body{
+    width: 100%;
+    background-color: #204d74;
+    height: 100%;
+}
+/*----------------------------
+            Back To Top
+-----------------------------*/
+.backtotop,
+.backtotop::after,
+.backtotop::before,
+.backtotop .backtotop-morph
+{
+    transition: all 250ms ease-in-out 0s;
+}
+
+.backtotop {
+    border: 0px dotted #2b542c;
+    width: 50px;
+    height: 50px;
+    right: 25px;
+    bottom: 20px;
+    position: fixed;
+    border-radius: 10px 20px;
+    background: #5e5e5e;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transform-origin: center center 0;
+    z-index: 1000;
+}
+.backtotop::before {
+    width: 18px;
+    height: 4px;
+    left: 6px;
+    top: 56%;
+    position: absolute;
+
+    background-color: #2b542c;
+    content: "";
+    transform: rotate(-45deg) translateY(-50%);
+    transform-origin: center top 0;
+}
+.backtotop::after {
+    width: 25px;
+    height: 4px;
+    right: 5px;
+    top: 50%;
+    position: absolute;
+
+    background-color: #2b542c;
+    content: "";
+    transform: rotate(45deg) translateY(-50%);
+    transform-origin: center top 0;
+}
+
+/*Hover*/
+.backtotop .backtotop-morph {
+    background-color: #2b542c;
+
+    width: 15px;
+    height: 4px;
+    left: 100%;
+    top: 45%;
+    position: absolute;
+
+    opacity: 0;
+    margin-bottom: -20px;
+    transform: translate(-50%);
+}
+.backtotop .backtotop-morph::before {
+    width: 0;
+    height: 0;
+    left: -7px;
+    top: -4px;
+    position: absolute;
+
+    border-color: transparent #2b542c transparent transparent;
+    border-style: solid;
+    border-width: 6px 10px 6px 0;
+    content: "";
+}
+.backtotop:hover {
+    transform: rotate(90deg);
+}
+.backtotop:hover .backtotop-morph {
+    left: 40%;
+    opacity: 1;
+}
+.backtotop:hover::before {
+    width: 30px;
+    left: 10px;
+    top: 30%;
+
+    background-color: #2b542c;
+    transform: rotate(0deg) translateY(-8px);
+}
+.backtotop:hover::after {
+    width: 30px;
+    right: 10px;
+    top: 60%;
+
+    background-color: #2b542c;
+    transform: rotate(0deg) translateY(8px);
+}
