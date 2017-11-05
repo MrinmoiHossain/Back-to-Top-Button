@@ -51,6 +51,18 @@ body {
     background-color: #204d74;
     height: 100%;
 }
+.body{
+    text-align: center;
+}
+.body h1{
+    font-size: 55px;
+    margin: 5%;
+}
+.body p{
+    margin: 3%;
+    font-size: 17px;
+    text-align: justify;
+}
 /*----------------------------
             Back To Top
 -----------------------------*/
